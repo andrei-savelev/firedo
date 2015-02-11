@@ -39,12 +39,12 @@
 
 
 	  <form ng-submit="addTodo()" class="list-group-item">
-		  <textarea type="text" ng-model="todoText" class="_cuctom-textarea">{{todoText}}</textarea>
+		  <textarea type="text" ng-model="todoText" class="_cuctom-textarea" placeholder="Ваша задача...">{{todoText}}</textarea>
 		  <input type="submit" class="btn btn-default _custom-btn" value="Добавить задачу"/>
 	  </form>
       <!-- / Форма добавления новых задач -->
       <div class="list-group-item">
-          <span class="glyphicon glyphicon-align-left"></span> <a class="popup-link-1" href="">Как это работает?</a>
+          <span class="glyphicon glyphicon-question-sign"></span> <a class="popup-link-1" href="">Что это такое?</a>
       </div>
       <div class="alert alert-warning alert-dismissible" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -64,14 +64,14 @@
           <h4>Вся логика работы этого приложения реализована с помощью трех технологий, сонованных на JavaScript.</h4>
           <ul>
               <li>AngularJS</li>
-              <li>LocalStorage (HTML5)</li>
+              <li>FireBase</li>
               <li>JQuery</li>
           </ul>
           <p>Практически весь код подробно задокументирован, поэтму понять принцип работы этого приложения не составит труда. Благодаря современным технологиям хранинея информации на клиенте, даже после закрытия окна или его перезагрузки, все ваши задачи сохраняться, и вы сможете вернуться к их исполнению в любое время.</p>
           <hr>
           <p>В основе приложения - AngularJS, он отвечает за всю основную работу "OwlDo".</p>
-          <p>Хранение информации осуществляется на клиенте, в LocalStorage</p>
-          <p>Данное окно - результат работы нехитрого кода на JQuery</p>
+          <p>Хранение информации осуществляется в облачной BD FireBase</p>
+          <p>Данное окно и несколько других небольших фич - результат работы нехитрого кода на JQuery</p>
           <hr>
           <p>Спасибо за проявленный интерес!</p>
           <em>Меня можно найти здесь:</em>

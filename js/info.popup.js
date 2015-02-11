@@ -7,4 +7,7 @@ $(document).ready(function(){
                 // do something…
         })
     );
+    function test(){
+        console.log('test');
+    }
 });
