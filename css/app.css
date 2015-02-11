@@ -1,0 +1,115 @@
+/*
+* Основной контент
+*/
+.wrap {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrap li {
+    list-style: none;
+}
+.wrap h3 {
+	text-align: center;
+}
+.b-left {
+    display: inline-block;
+    width: 93%;
+}
+.b-left p {
+    display: inline-block;
+    width: 90%;
+    margin-left: 7%;
+    word-wrap:break-word;
+}
+.b-left input {
+    position: absolute;
+}
+.b-right {
+    display: inline-block;
+    width: 15%;
+    position: absolute;
+}
+.todo {
+    border: none;
+    word-wrap:break-word;
+}
+._todo-prev {
+	color: #929292;
+}
+textarea._cuctom-textarea {
+	width: 100%;
+    resize: none;
+}
+._custom-btn {
+	margin-left: 28%;
+	margin-top: 1rem;
+}
+h3.title {
+    background: #f5f5f5;
+}
+.done {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+/*
+* Стили Поп-ап окна
+*/
+.popup-link-1 {
+	text-align: center;
+	font-size: 1.2rem;
+}
+.popup-box {
+    position: absolute;
+    border-radius: 5px;
+    background: #fff;
+    display: none;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    z-index: 9999999;
+    font-size: 14px;
+}
+ 
+.popup-box .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-family: Arial, Helvetica, sans-serif;  
+    font-weight: bold;
+    cursor: pointer;
+    color: #434343;
+    padding: 20px;
+    font-size: 20px;
+}
+ 
+.popup-box .close:hover {
+    color: #000;
+}
+ 
+.popup-box h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+.popup-box .top {
+    padding: 20px;
+}
+ 
+.popup-box .bottom {
+    background: #eee;
+    border-top: 1px solid #e5e5e5;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+ 
+#blackout {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 999999;
+    left: 0;
+    display: none;
+}
