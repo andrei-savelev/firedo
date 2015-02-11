@@ -1,13 +1,11 @@
 /* Created by Andrey Savelev on 09.02.2015. */
 function TodoCtrl($scope) {
     // Функция для отслеживания ошибок
-    // или информирования об успешном выполнении
-    // некоторых операций.
     var onComplete = function(error) {
         if (error) {
             alert('Не удалось подключиться к базе данных');
         } else {
-            alert('Задача полностью удалена');
+            //alert('Синхронизация выполнена');
         }
     };
 
@@ -17,7 +15,7 @@ function TodoCtrl($scope) {
     // создается метод для работы с базой данных Firebase
     // Единственным параметром передается адрес базы данных
     // за последним слешем в адресе указываются конретные хранилища базы
-    $scope.myData = new Firebase("https://owldo.firebaseio.com/mytodolist");
+    $scope.myData = new Firebase("https://owldo.firebaseio.com/test");
 
     // Функция для добавления новых задач
     $scope.addTodo = function () {
@@ -48,7 +46,7 @@ function TodoCtrl($scope) {
         var cnt = 0;
         for(var i in $scope.todos){
             if(index == cnt){
-                $scope.updateData = new Firebase("https://owldo.firebaseio.com/mytodolist/"+i);
+                $scope.updateData = new Firebase("https://owldo.firebaseio.com/test/"+i);
                 var newData = {
                     done: $scope.todos[i].done,
                     text: $scope.todos[i].text
@@ -63,7 +61,7 @@ function TodoCtrl($scope) {
         var cnt = 0;
         for(var i in $scope.todos){
             if(index == cnt){
-                $scope.updateData = new Firebase("https://owldo.firebaseio.com/mytodolist/"+i);
+                $scope.updateData = new Firebase("https://owldo.firebaseio.com/test/"+i);
                 $scope.updateData.remove(onComplete);
             }
             cnt++;

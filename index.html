@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>FireDo</title>
+	<title>FireDo (alpha)</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/app.css" />
 	<!--script src="js/vendor/modernizr.js"></script-->
@@ -15,7 +15,13 @@
   <body ng-controller="TodoCtrl">
 
   <div class="wrap">
-	  <h3 class="list-group-item title">Список задач "FireDo" <sup>alpha</sup></h3>
+      <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <strong>Внимание!</strong> Если во время работы приложения соединение с Интернет будет разорвано, и
+          Вы закроете это окно, изменения <b>не будут сохранены</b>. Если окно приложения будет открыто до тех пор,
+          пока соединиение не восстановится, <u>"FireDo</u> <sup>alpha</sup>" <u>синхронизирует список со всеми клиентами.</u>
+      </div>
+	  <h3 class="list-group-item title">Список задач "FireDo <sup>alpha</sup>"</h3>
 
 	  <!-- Список Задач -->
 	  <ul class="list-group-item">
@@ -49,41 +55,41 @@
       <div class="list-group-item">
           <span class="glyphicon glyphicon-question-sign"></span> <a class="popup-link-1" href="">Что это такое?</a>
       </div>
-      <div class="alert alert-warning alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <strong>Внимание!</strong> Если во время работы со списком соединение с Интернет будет разорвано,
-          изменения <b>не будут сохранены</b>.
-      </div>
+      <hr/>
+      <a href="https://github.com/savelevcorr/firedo/archive/master.zip" class=" btn btn-default btn-lg btn-block">
+          Скачать исходники <span class="glyphicon glyphicon-save"></span>
+      </a>
   </div>
 
-  <!-- PopUp Окно для новых пользователей -->
 
+  <!-- PopUp Окно для новых пользователей -->
 
   <div class="popup-box" id="popup-box-1">
       <div class="close">X</div>
       <div class="top">
-          <h2>Real-time ToDo list "FireDo" <sup>alpha</sup></h2>
+          <h2>Real-time ToDo list "FireDo <sup>alpha</sup>"</h2>
       </div>
       <div class="bottom">
-          <h4>Вся логика работы этого приложения реализована с помощью трех технологий, сонованных на JavaScript.</h4>
+          <h4>Вся логика работы этого real-time приложения реализована с помощью трех технологий, сонованных на JavaScript.</h4>
           <ul>
               <li>AngularJS</li>
               <li>FireBase</li>
               <li>JQuery</li>
           </ul>
           <p>Благодаря современным технологиям хранения информации в облачных базах данных,
-              даже после закрытия окна или его перезагрузки, все ваши задачи сохраняться, и вы сможете вернуться к
+              даже после закрытия окна или его перезагрузки, все ваши задачи сохранятся, и вы сможете вернуться к
               их исполнению в любое время. Однако, стоит отметить, что в данном приложении процесс синхронизации
-              данных, введных после разрыва соединения, <b>не реализован</b>. Поэтому, при отсуствующем соеднинении
-              Ваши задачи не смогут быть сохранены в базу данных.</p>
-          <p>В основе приложения - AngularJS, он отвечает за всю основную работу "FireDo".</p>
+              данных, введных после разрыва соединения, <b>реализован частично</b>. Поэтому, при отсуствующем соеднинении
+              Ваши задачи могут быть утеряны.</p>
+          <p>В основе приложения - AngularJS - это ядро "FireDo <sup>alpha</sup>".</p>
           <p>Хранение информации осуществляется в облачной BD FireBase</p>
-          <p>Стоит отметить, что при одинаковых настройках подключения к базе (по умолчанию) данные на всех клиентах будут синхронизированы</p>
-          <p>Спасибо за проявленный интерес!</p>
+          <p>Обратите внимание, что при одинаковых настройках подключения к базе
+              (по умолчанию) данные на всех клиентах будут синхронизированы!</p>
+          <p>Спасибо, за проявленный интерес!</p>
           <em>Меня можно найти здесь:</em>
           <a href="http://savelevandrey.ru">Веб-сайт</a>
           <a href="http://vk.com/andrewsavelev">VK.com</a>
-          <a href="https://github.com/savelevcorr/firedo.git">GitHub</a>
+          <a href="https://github.com/savelevcorr/firedo">GitHub</a>
 
       </div>
   </div>
